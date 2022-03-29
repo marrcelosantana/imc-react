@@ -6,7 +6,6 @@ export function HomePage() {
   const [peso, setPeso] = useState(0);
   const [altura, setAltura] = useState(0);
   const [imc, setImc] = useState(0);
-  const notify = () => toast("");
 
   function calcular(event: FormEvent) {
     event.preventDefault();
