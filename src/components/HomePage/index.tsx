@@ -55,8 +55,18 @@ export function HomePage() {
       </button>
       <Toaster />
       <p id="res">
-        Seu IMC é de:  
-        <span className={ imc >= 18.5 && imc <= 24.9 ? "resSuccess" : imc == 0 ? "resNormal" : "resDanger" }>
+        Seu IMC é de:
+        <span
+          className={
+            imc >= 18.5 && imc <= 24.9
+              ? "resSuccess"
+              : imc >= 25 && imc <= 29.9
+              ? "resAlert"
+              : imc == 0
+              ? "resNormal"
+              : "resDanger"
+          }
+        >
           {imc.toFixed(2)}
         </span>
       </p>

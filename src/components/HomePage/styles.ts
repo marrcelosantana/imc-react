@@ -48,6 +48,11 @@ export const Container = styled.form`
     }
 
   }
+
+  .resAlert{
+    color: #f68512;
+  }
+
   .resDanger{
     color: #ce1126;
   }
