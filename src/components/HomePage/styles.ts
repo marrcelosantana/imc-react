@@ -15,7 +15,7 @@ export const Container = styled.form`
     margin-bottom: 1.5rem;
   }
 
-  label{
+  label {
     margin-top: 10px;
     color: var(--text-title);
   }
@@ -38,7 +38,7 @@ export const Container = styled.form`
     }
   }
 
-  p{
+  p {
     color: var(--text-title);
     margin-top: 0.5rem;
   }
