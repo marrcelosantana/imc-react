@@ -12,7 +12,7 @@ export function HomePage() {
     const imc = peso / (altura * altura);
 
     if (imc < 18.5) {
-      toast("MAGREZA!", { icon: "🤚", duration: 5000 });
+      toast("ABAIXO DO PESO!", { icon: "🤚", duration: 5000 });
     } else if (imc >= 18.5 && imc <= 24.9) {
       toast.success("NORMAL!", { duration: 5000 });
     } else if (imc >= 25 && imc <= 29.9) {
@@ -55,7 +55,10 @@ export function HomePage() {
       </button>
       <Toaster />
       <p id="res">
-        Seu IMC é de: <strong>{imc.toFixed(2)}</strong>
+        Seu IMC é de:  
+        <span className={ imc >= 18.5 && imc <= 24.9 ? "resSuccess" : "resDanger" }>
+          {imc.toFixed(2)}
+        </span>
       </p>
     </Container>
   );

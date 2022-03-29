@@ -41,8 +41,22 @@ export const Container = styled.form`
   p {
     color: var(--text-title);
     margin-top: 0.5rem;
+
+    span{
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+  }
+  .resDanger{
+    color: #ce1126;
+  }
+
+  .resSuccess{
+    color: #32b447;
   }
 `;
+
 
 export const InputsContainer = styled.div`
   display: flex;
