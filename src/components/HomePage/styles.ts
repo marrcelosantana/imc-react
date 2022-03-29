@@ -15,6 +15,11 @@ export const Container = styled.form`
     margin-bottom: 1.5rem;
   }
 
+  label{
+    margin-top: 10px;
+    color: var(--text-title);
+  }
+
   button {
     width: 30%;
     padding: 0 1.5rem;
@@ -31,6 +36,11 @@ export const Container = styled.form`
     &:hover {
       filter: brightness(0.9);
     }
+  }
+
+  p{
+    color: var(--text-title);
+    margin-top: 0.5rem;
   }
 `;
 
