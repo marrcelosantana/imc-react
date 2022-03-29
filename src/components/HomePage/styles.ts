@@ -55,6 +55,10 @@ export const Container = styled.form`
   .resSuccess{
     color: #32b447;
   }
+
+  .resNormal{
+    color: var(--text-title);
+  }
 `;
 
 
